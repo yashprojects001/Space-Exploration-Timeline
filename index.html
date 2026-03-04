@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Space Exploration Timeline</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(black,#020a1f);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.8;
+}
+
+/* TIMELINE */
+
+.timeline{
+position:relative;
+max-width:1000px;
+margin:100px auto;
+}
+
+.timeline::after{
+content:'';
+position:absolute;
+width:4px;
+background:white;
+top:0;
+bottom:0;
+left:50%;
+margin-left:-2px;
+}
+
+/* CONTAINERS */
+
+.container{
+padding:20px 40px;
+position:relative;
+background:inherit;
+width:50%;
+}
+
+.container.left{
+left:0;
+}
+
+.container.right{
+left:50%;
+}
+
+.content{
+padding:20px;
+background:#111;
+border-radius:8px;
+box-shadow:0 0 10px rgba(255,255,255,0.2);
+}
+
+.content h2{
+margin-bottom:10px;
+color:#4da6ff;
+}
+
+/* FUTURE SECTION */
+
+.future{
+text-align:center;
+padding:100px 20px;
+background:#020a1f;
+}
+
+.future h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.future-card{
+background:#111;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+max-width:400px;
+box-shadow:0 0 10px rgba(255,255,255,0.1);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+background:black;
+opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>🚀 Space Exploration</h1>
+<p>Journey Through the History of Space Missions</p>
+
+</section>
+
+
+<!-- TIMELINE -->
+
+<section class="timeline">
+
+<div class="container left">
+<div class="content">
+<h2>1957</h2>
+<p>Sputnik 1 launched by USSR — first artificial satellite in space.</p>
+</div>
+</div>
+
+<div class="container right">
+<div class="content">
+<h2>1969</h2>
+<p>Apollo 11 mission lands humans on the Moon.</p>
+</div>
+</div>
+
+<div class="container left">
+<div class="content">
+<h2>1998</h2>
+<p>International Space Station (ISS) construction begins.</p>
+</div>
+</div>
+
+<div class="container right">
+<div class="content">
+<h2>2012</h2>
+<p>Curiosity Rover lands on Mars to explore the planet.</p>
+</div>
+</div>
+
+<div class="container left">
+<div class="content">
+<h2>2021</h2>
+<p>Perseverance Rover lands on Mars and searches for ancient life.</p>
+</div>
+</div>
+
+</section>
+
+
+<!-- FUTURE MISSIONS -->
+
+<section class="future">
+
+<h2>🔭 Future Space Missions</h2>
+
+<div class="future-card">
+<h3>2030</h3>
+<p>First human mission to Mars.</p>
+</div>
+
+<div class="future-card">
+<h3>2040</h3>
+<p>Permanent human base on the Moon.</p>
+</div>
+
+<div class="future-card">
+<h3>2050</h3>
+<p>Commercial space tourism becomes common.</p>
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>🌌 Space Exploration Timeline Project</p>
+
+</footer>
+
+</body>
+</html>
